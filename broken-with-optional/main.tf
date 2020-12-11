@@ -1,3 +1,7 @@
+terraform {
+  required_version = "0.14.2"
+}
+
 module "test" {
   source = "./module"
   list_of_objects_var = [
