@@ -1,3 +1,2 @@
 .terraform*
-crash.log
 *.tfstate

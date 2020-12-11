@@ -1,0 +1,194 @@
+2020/12/11 15:28:39 [INFO] Terraform version: 0.14.2  
+2020/12/11 15:28:39 [INFO] Go runtime version: go1.15.2
+2020/12/11 15:28:39 [INFO] CLI args: []string{"/usr/local/Cellar/tfenv/2.0.0/versions/0.14.2/terraform", "plan"}
+2020/12/11 15:28:39 [DEBUG] Attempting to open CLI config file: /Users/s730823/.terraformrc
+2020/12/11 15:28:39 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/12/11 15:28:39 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2020/12/11 15:28:39 [DEBUG] ignoring non-existing provider search directory /Users/s730823/.terraform.d/plugins
+2020/12/11 15:28:39 [DEBUG] ignoring non-existing provider search directory /Users/s730823/Library/Application Support/io.terraform/plugins
+2020/12/11 15:28:39 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2020/12/11 15:28:39 [INFO] CLI command args: []string{"plan"}
+2020/12/11 15:28:39 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/12/11 15:28:39 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/12/11 15:28:39 [DEBUG] New state was assigned lineage "bf1bd029-b7b3-a7f0-7949-7c0dabe7aff0"
+2020/12/11 15:28:39 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/12/11 15:28:39 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/12/11 15:28:39 [DEBUG] checking for provisioner in "."
+2020/12/11 15:28:39 [DEBUG] checking for provisioner in "/usr/local/Cellar/tfenv/2.0.0/versions/0.14.2"
+2020/12/11 15:28:39 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2020/12/11 15:28:39 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/12/11 15:28:39 [INFO] backend/local: starting Plan operation
+2020/12/11 15:28:39 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/12/11 15:28:39 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/12/11 15:28:39 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/12/11 15:28:39 [TRACE] backend/local: reading remote state for workspace "default"
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/12/11 15:28:39 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/12/11 15:28:39 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/12/11 15:28:39 [TRACE] backend/local: building context for current working directory
+2020/12/11 15:28:39 [TRACE] terraform.NewContext: starting
+2020/12/11 15:28:39 [TRACE] terraform.NewContext: loading provider schemas
+2020/12/11 15:28:39 [TRACE] terraform.NewContext: complete
+2020/12/11 15:28:39 [TRACE] backend/local: finished building terraform.Context
+2020/12/11 15:28:39 [TRACE] backend/local: requesting interactive input, if necessary
+2020/12/11 15:28:39 [TRACE] Context.Input: Prompting for provider arguments
+2020/12/11 15:28:39 [TRACE] backend/local: running validation operation
+2020/12/11 15:28:39 [INFO] terraform: building graph: GraphTypeValidate
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/12/11 15:28:39 [TRACE] ConfigTransformer: Starting for path: 
+2020/12/11 15:28:39 [TRACE] ConfigTransformer: Starting for path: module.test
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer with new graph:
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/12/11 15:28:39 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  ------
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/12/11 15:28:39 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2020/12/11 15:28:39 [TRACE] ModuleExpansionTransformer: Added module.test as *terraform.nodeValidateModule
+2020/12/11 15:28:39 [TRACE] ModuleExpansionTransformer: module.test (close) must wait for expansion of module.test
+2020/12/11 15:28:39 [TRACE] ModuleExpansionTransformer: module.test.var.list_of_objects_var (expand) must wait for expansion of module.test
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer with new graph:
+  module.test (close) - *terraform.nodeCloseModule
+    module.test (expand) - *terraform.nodeValidateModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (expand) - *terraform.nodeValidateModule
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+    module.test (expand) - *terraform.nodeValidateModule
+  ------
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/12/11 15:28:39 [DEBUG] ReferenceTransformer: "module.test (close)" references: []
+2020/12/11 15:28:39 [DEBUG] ReferenceTransformer: "module.test.var.list_of_objects_var (expand)" references: []
+2020/12/11 15:28:39 [DEBUG] ReferenceTransformer: "module.test (expand)" references: []
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.attachDataResourceDependenciesTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.attachDataResourceDependenciesTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    module.test (close) - *terraform.nodeCloseModule
+    module.test (expand) - *terraform.nodeValidateModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (close) - *terraform.nodeCloseModule
+    module.test (expand) - *terraform.nodeValidateModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (expand) - *terraform.nodeValidateModule
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+    module.test (expand) - *terraform.nodeValidateModule
+  ------
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    module.test (close) - *terraform.nodeCloseModule
+    module.test (expand) - *terraform.nodeValidateModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (close) - *terraform.nodeCloseModule
+    module.test (expand) - *terraform.nodeValidateModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (expand) - *terraform.nodeValidateModule
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+    module.test (expand) - *terraform.nodeValidateModule
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  ------
+2020/12/11 15:28:39 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/12/11 15:28:39 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    module.test (close) - *terraform.nodeCloseModule
+  module.test (close) - *terraform.nodeCloseModule
+    module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+  module.test (expand) - *terraform.nodeValidateModule
+  module.test.var.list_of_objects_var (expand) - *terraform.nodeExpandModuleVariable
+    module.test (expand) - *terraform.nodeValidateModule
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+  ------
+2020/12/11 15:28:39 [DEBUG] Starting graph walk: walkValidate
+2020/12/11 15:28:39 [TRACE] dag/walk: visiting "module.test (expand)"
+2020/12/11 15:28:39 [TRACE] vertex "module.test (expand)": starting visit (*terraform.nodeValidateModule)
+2020/12/11 15:28:39 [TRACE] vertex "module.test (expand)": visit complete
+2020/12/11 15:28:39 [TRACE] dag/walk: visiting "module.test.var.list_of_objects_var (expand)"
+2020/12/11 15:28:39 [TRACE] vertex "module.test.var.list_of_objects_var (expand)": starting visit (*terraform.nodeExpandModuleVariable)
+2020/12/11 15:28:39 [TRACE] vertex "module.test.var.list_of_objects_var (expand)": expanding dynamic subgraph
+2020/12/11 15:28:39 [TRACE] vertex "module.test.var.list_of_objects_var (expand)": entering dynamic subgraph
+2020/12/11 15:28:39 [TRACE] dag/walk: visiting "module.test.var.list_of_objects_var"
+2020/12/11 15:28:39 [TRACE] vertex "module.test.var.list_of_objects_var": starting visit (*terraform.nodeModuleVariable)
+2020/12/11 15:28:39 [TRACE] vertex "module.test.var.list_of_objects_var": visit complete
+panic: inconsistent list element types (cty.Object(map[string]cty.Type{"nullable_object":cty.Object(map[string]cty.Type{"list_with_optional":cty.List(cty.ObjectWithOptionalAttrs(map[string]cty.Type{"attr":cty.String, "optional_attr":cty.String}, []string{"", "optional_attr"}))})}) then cty.Object(map[string]cty.Type{"nullable_object":cty.Object(map[string]cty.Type{"list_with_optional":cty.List(cty.Object(map[string]cty.Type{"attr":cty.String, "optional_attr":cty.String}))})}))
+
+goroutine 38 [running]:
+github.com/zclconf/go-cty/cty.ListVal(0xc0009920c0, 0x2, 0x2, 0xc0005cc2a0, 0x1, 0x1, 0x1)
+	/go/pkg/mod/github.com/zclconf/go-cty@v1.7.0/cty/value_init.go:166 +0x445
+github.com/zclconf/go-cty/cty/convert.conversionTupleToList.func2(0x384f040, 0xc000168a40, 0x2f25420, 0xc000168a60, 0x0, 0x0, 0x0, 0xc000098480, 0x10, 0x10, ...)
+	/go/pkg/mod/github.com/zclconf/go-cty@v1.7.0/cty/convert/conversion_collection.go:327 +0x794
+github.com/zclconf/go-cty/cty/convert.getConversion.func1(0x384f040, 0xc000168a40, 0x2f25420, 0xc000168a60, 0x0, 0x0, 0x0, 0xc000174f90, 0xc0005cc290, 0x384ef40, ...)
+	/go/pkg/mod/github.com/zclconf/go-cty@v1.7.0/cty/convert/conversion.go:46 +0x433
+github.com/zclconf/go-cty/cty/convert.retConversion.func1(0x384f040, 0xc000168a40, 0x2f25420, 0xc000168a60, 0xc0005cc290, 0xc000168160, 0x0, 0x1, 0xc0008cbad0, 0x10000c000170000)
+	/go/pkg/mod/github.com/zclconf/go-cty@v1.7.0/cty/convert/conversion.go:188 +0x6b
+github.com/zclconf/go-cty/cty/convert.Convert(0x384f040, 0xc000168a40, 0x2f25420, 0xc000168a60, 0x384ef40, 0xc0005313b0, 0xc000168a40, 0x2f25420, 0xc000168a60, 0x0, ...)
+	/go/pkg/mod/github.com/zclconf/go-cty@v1.7.0/cty/convert/public.go:51 +0x1aa
+github.com/hashicorp/terraform/terraform.(*nodeModuleVariable).EvalModuleCallArgument(0xc00017e000, 0x388a660, 0xc00016c410, 0xc00010c601, 0x0, 0x2, 0x28)
+	/home/circleci/project/project/terraform/node_module_variable.go:238 +0x265
+github.com/hashicorp/terraform/terraform.(*nodeModuleVariable).Execute(0xc00017e000, 0x388a660, 0xc00016c410, 0x4937204, 0x0, 0x0)
+	/home/circleci/project/project/terraform/node_module_variable.go:157 +0x7f
+github.com/hashicorp/terraform/terraform.(*ContextGraphWalker).Execute(0xc0008f5790, 0x388a660, 0xc00016c410, 0x8a75578, 0xc00017e000, 0x0, 0x0, 0x0)
+	/home/circleci/project/project/terraform/graph_walk_context.go:127 +0xbc
+github.com/hashicorp/terraform/terraform.(*Graph).walk.func1(0x31f2940, 0xc00017e000, 0x0, 0x0, 0x0)
+	/home/circleci/project/project/terraform/graph.go:59 +0x962
+github.com/hashicorp/terraform/dag.(*Walker).walkVertex(0xc00017e060, 0x31f2940, 0xc00017e000, 0xc000187d00)
+	/home/circleci/project/project/dag/walk.go:387 +0x375
+created by github.com/hashicorp/terraform/dag.(*Walker).Update
+	/home/circleci/project/project/dag/walk.go:309 +0x1246
