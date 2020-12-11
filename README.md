@@ -1,4 +1,4 @@
-# Demo for TF issue using the new module_variable_optional_attrs experiment
+# Demo for [this TF issue](https://github.com/hashicorp/terraform/issues/27269) using the new module_variable_optional_attrs experiment
 
 See a trace below. I am able to get this error consistently by running `tf plan` in `./broken-with-optional`.
 
